@@ -259,6 +259,7 @@ body._lock {
 
 .header {
   background-color: #181614;
+  opacity: 0.8;
   height: 110px;
   position: fixed;
   left: 0;
@@ -311,7 +312,7 @@ body._lock {
 }
 
 .footer {
-  background: url(../img/footer-bg.png) no-repeat;
+  background: url(../img/footer-bg.png) 0 0/cover no-repeat;
 }
 
 .footer_content {
@@ -2140,6 +2141,7 @@ body._lock {
 @media (max-width: 1200px) {
   .header {
     height: 80px;
+    opacity: 1;
   }
 
   .header__container {
@@ -2909,7 +2911,7 @@ body._lock {
 
 .webp .btn-fon { background-image: url(../img/btn-white.webp); }
 
-.webp .footer { background: url(../img/footer-bg.webp) no-repeat; }
+.webp .footer { background: url(../img/footer-bg.webp) 0 0/cover no-repeat; }
 
 .webp .home { background-image: url(../img/bg-home.webp); }
 
