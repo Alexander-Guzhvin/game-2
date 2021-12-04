@@ -231,23 +231,79 @@ new Swiper('.reviews__swiper', {
         disableOnInteraction: false,
     },
     speed:600,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
+    spaceBetween: 111,
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
     breakpoints: {
-        1200: {
+        640: {
+            slidesPerGroup: 1,
+            slidesPerView: 1,
+            centerSlides: true,
+        },
+        960: {
+            spaceBetween: 40,
             slidesPerGroup: 3,
             slidesPerView: 3,
         },
-        700: {
-            slidesPerGroup: 1,
-            slidesPerView: 2,
+        1200: {
+            spaceBetween: 100,
+            slidesPerGroup: 3,
+            slidesPerView: 3,
+        },
+
+    }
+});
+
+
+new Swiper('.tabs_clan__swiper', {
+
+    speed:600,
+    slidesPerView: 5,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    spaceBetween: 3,
+    breakpoints: {
+        480: {
+            spaceBetween: 28,
         },
     }
 });
+
+new Swiper('.tabs_class__swiper', {
+
+    speed:600,
+    slidesPerView: 5,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    spaceBetween: 3,
+    breakpoints: {
+        480: {
+            spaceBetween: 28,
+        },
+    }
+});
+
+
+new Swiper('.soon__swiper', {
+
+    speed:600,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    }
+});
+
+
 
 
 
