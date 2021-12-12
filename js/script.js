@@ -1,3 +1,5 @@
+
+
 function ibg(){
     let ibg=document.querySelectorAll(".ibg");
    for (var i = 0; i < ibg.length; i++) {
@@ -304,6 +306,17 @@ new Swiper('.soon__swiper', {
 });
 
 
+new Swiper('.world-2__swiper', {
+
+  speed:600,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  }
+});
+
 
 
 
@@ -375,3 +388,9 @@ if (animItems.length > 0) {
 
 
 }
+
+
+document.getElementById('play').onclick = function() {
+  document.getElementById('fon').hidden = true;
+}
+
